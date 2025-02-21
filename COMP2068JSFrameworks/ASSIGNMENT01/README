@@ -1,0 +1,33 @@
+			                                                                  	Personal Portfolio Website
+
+
+
+- Description
+
+This project is a personal portfolio website built using Node.js, Express, and Handlebars (HBS) templating engine. The website showcases various sections including Home, About Me, Projects, and Contact Me. The portfolio is designed to present personal achievements, projects, and skills in web development, frontend, backend, and design.
+
+- Features
+
+Home Page: Introduction and overview of the portfolio.
+About Me: Background information, education, and skills.
+Projects: A showcase of completed projects with links and descriptions.
+Contact Me: A form or contact information for reaching out.
+
+
+- Technologies Used
+
+1. Node.js
+2. Express
+3. Handlebars (HBS)
+4. HTML/CSS
+5. Bootstrap
+6. Git
+
+- Referance
+
+https://www.elenachaikin.com/
+
+https://uiverse.io/forms?orderBy=views&page=2
+
+- Website link
+https://comp2068jsframeworks-36tv.onrender.com
