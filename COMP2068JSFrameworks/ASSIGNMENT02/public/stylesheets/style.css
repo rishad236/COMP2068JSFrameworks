@@ -1,0 +1,64 @@
+/* Basic Background with Vintage Paper Look */
+body.old-school-bg {
+  background-color: #f8f1e1;
+  font-family: 'Cinzel', serif;
+  padding: 30px;
+}
+
+/* Vintage Heading Style */
+.vintage-title {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  color: #4a2f1e; 
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* List Group (for movies list) */
+.vintage-list {
+  background-color: #fff8f1;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual List Item */
+.vintage-item {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  background-color: #f9f3e5;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Action Buttons Style */
+.vintage-btn {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #c4a261;
+  color: white;
+  border: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+/* Hover Effects for Buttons */
+.vintage-btn:hover {
+  background-color: #b38c60;
+}
+
+/* Movie Input Fields */
+.vintage-input {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #fff1cc;
+  color: #6c4f2f;
+  border: 1px solid #d3b18f;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.vintage-input:focus {
+  background-color: #fff8e1;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Watchlist</title>
+  <!-- Link to Google Fonts for retro style -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap 4 for basic styling -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="old-school-bg">
+
+  <div class="container mt-5">
+    <h1 class="text-center vintage-title">Your Movie Watchlist</h1>
+    
+    <ul class="list-group vintage-list">
+      {{#each movies}}
+        <li class="list-group-item d-flex justify-content-between align-items-center vintage-item">
+          <div class="movie-details">
+            <strong>{{this.title}}</strong> - {{this.genre}} 
+            ({{#if this.watched}}
+              <span class="badge badge-success">Watched</span>
+            {{else}}
+              <span class="badge badge-warning">Unwatched</span>
+            {{/if}})
+          </div>
+
+          <div class="action-buttons">
+            <!-- Mark as Watched Form -->
+            <form action="/movies/update/{{this._id}}" method="POST" style="display:inline;">
+              <button type="submit" class="btn btn-sm btn-primary vintage-btn">Mark Watched</button>
+            </form>
+
+            <!-- Delete Movie Form -->
+            <form action="/movies/delete/{{this._id}}" method="POST" style="display:inline;">
+              <button type="submit" class="btn btn-sm btn-danger vintage-btn">Delete</button>
+            </form>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+
+    <!-- Add Movie Section -->
+    <h1 class="text-center vintage-title mt-5">Add a Movie</h1>
+    <form action="/movies/add" method="POST">
+      <div class="form-group">
+        <input type="text" name="title" placeholder="Movie Title" required class="form-control mb-2 vintage-input">
+        <input type="text" name="genre" placeholder="Genre" class="form-control mb-2 vintage-input">
+        <button type="submit" class="btn btn-success vintage-btn">Add Movie</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
